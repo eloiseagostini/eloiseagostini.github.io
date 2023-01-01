@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title >Portfolio</title>
+  <meta charset="utf8">
+			<link type="text/css"
+			href="portfolio.css"
+			rel="stylesheet">
+            <script src="portfolio.js" defer></script>
+          <style>
+            
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+body{
+margin-top: 0px;
+margin-left: 0%;
+scroll-margin: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: white; 
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(131, 1, 167); 
+  border-radius: 0px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: black;
+    margin-left: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+}
+h1{
+  font-size: 20px;
+  font-family: 'Chivo', sans-serif;
+  font-style:  italic;
+  font-weight: normal;
+    color: black;
+    margin-left: 20px;
+    position: fixed;
+    top: 70px;
+}
+h3{
+  font-size: 20px;
+  font-family: 'Hanken Grotesk', sans-serif;
+    color: black;
+    margin-left: 20px;
+    font-weight: normal;
+}
+p{
+  font-size: 25px;
+  font-family: 'Hanken Grotesk', sans-serif;
+    color: black;
+    margin-left: 20px;
+    
+}
+.paragraphe{
+  width: 800px;
+  position: fixed;
+  top: 200px;
+}
+.menu {
+    display: inline-block;
+    list-style-type:  none;
+    z-index: 1;
+    position: fixed;
+    left: -30px;
+    top:3px;
+    margin: 0%;
+  }
+
+.sub-menu {
+ 
+    list-style-type:  none;
+   
+  }
+.li{
+    list-style-type:  none;
+    z-index: 1;
+}
+.li:hover{
+  opacity: 0.5;
+}
+  .menu > li {
+    float: left;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;
+  }
+  .sub-menu {
+    transform: scale(0);
+    transform-origin: top ;
+    transition: all 300ms ease-in-out;
+    z-index: 6;
+  }
+  .sub-menu li {
+    font-size: 20px;
+    padding: 3px 0;
+    color: rgb(0, 0, 0);
+    transform: scale(0);
+    z-index: 6;
+    transition: all 100ms ease-in-out;
+  }
+  .sub-menu li:hover{
+    opacity: 0.5;
+  }
+  .sub-menu li:last-child {
+    border-bottom: 0;
+  }
+  .menu > li:hover .sub-menu li {
+    transform: scale(1);
+  }
+  .menu > li:hover .sub-menu {
+    transform: scale(1);
+  }
+
+#ed1{
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    z-index: 1;
+    opacity: 1;
+}
+#ed2{
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    z-index: 1;
+}
+#ed3{
+    width: 300px;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    z-index: 1;
+}
+#ed4{
+  width: 250px;
+  position: absolute;
+  top: 200px;
+  left: 1100px;
+  z-index: 1;
+}
+#ed5{
+  width: 200px;
+  position: absolute;
+  top: 600px;
+  left: 1200px;
+  z-index: 1;
+}
+#ed6{
+  width: 150px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+#an1{
+    width: 200px;
+    position: absolute;
+    top: 700px;
+    left: 700px;
+    z-index: 1;
+}
+#workshop1{
+    width: 250px;
+    position: absolute;
+    top: 700px;
+    left: 800px;
+    z-index: 1;
+}
+#dep1{
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 1200px;
+    z-index: 1;
+    opacity: 1;
+}
+#illu1{
+    width: 300px;
+    position: absolute;
+    top: 500px;
+    left:400px;
+    z-index: 1;
+}
+#phot1{
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    left:700px;
+    z-index: 0;
+}
+#phot2{
+  width: 180px;
+  position: absolute;
+  top: 300px;
+  left:80px;
+  z-index: 1;
+}
+#plumeau{
+  width: 180px;
+  position: absolute;
+  top: 800px;
+  left:450px;
+  z-index: 1;
+}
+.boutton{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 900;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color:  rgb(0, 0, 0);
+}
+#buttonacceuil{
+  color: transparent;
+  
+}
+#presentation{
+  position: fixed;
+  top: 200px;
+  left: 10px;
+}
+#parcours{
+  position: fixed;
+  top: 500px;
+  left: 10px;
+}
+#experience{
+  position: fixed;
+  top: 200px;
+  left: 10px;
+}
+.zoomphoto1-ima{
+    position: fixed;
+    top: 50px;
+    left: 1000px;
+    width: 450px;
+    z-index: 5;
+}
+
+.zoomphoto1-ima-double{
+  position: fixed;
+  top: 200px;
+  left: 850px;
+  width: 600px;
+  z-index: 5;
+}
+.zoomphoto2-ima{
+  position: fixed;
+  top: 50px;
+  left: 1000px;
+  width: 450px;
+  z-index: 5;
+}
+.zoomphoto2-ima-double{
+  position: fixed;
+  top: 50px;
+  left: 1000px;
+  width: 600px;
+  z-index: 5;
+}
+#zoomphoto3-ima{
+  position: fixed;
+  top: 50px;
+  left: 1000px;
+  width: 450px;
+  z-index: 5;
+}
+.zoomphoto4-ima{
+  position: fixed;
+  top: 150px;
+  left: 850px;
+  width: 600px;
+  z-index: 5;
+}
+.zoomphoto5-ima{
+  position: fixed;
+  top: 150px;
+  left: 900px;
+  width: 450px;
+  z-index: 5;
+}
+.zoomphoto6-ima{
+  position: fixed;
+  top: 150px;
+  left: 950px;
+  width: 500px;
+  z-index: 5;
+}
+.zoomphoto7-ima{
+  position: fixed;
+  top: 50px;
+  left: 950px;
+  width: 450px;
+  z-index: 5;
+}
+.zoomphoto7-ima-leg{
+  position: fixed;
+  top: 50px;
+  left: 950px;
+  width: 350px;
+  z-index: 5;
+}
+.zoomphoto-video{
+  position: fixed;
+  top: 150px;
+  left: 900px;
+  width: 500px;
+  z-index: 5;
+}
+.zoomphoto-illu{
+  position: fixed;
+  top: 150px;
+  left: 850px;
+  width: 650px;
+  z-index: 5;
+}
+.zoomphoto-lib{
+  position: fixed;
+  top: 50px;
+  left: 950px;
+  width: 400px;
+  z-index: 5;
+}
+
+.zooms{
+    position: relative;
+    top: -30px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1200px;
+    display: none;
+   scroll-margin: 10px;
+    z-index: 5;
+}
+.pop{
+  position: fixed;
+  top: 70px;
+  left: 920px;
+  
+  width: 400px;
+  display: none;
+  z-index: 7;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(0, 0, 0);
+}
+
+.close {
+  font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  
+  top:30px;
+  right: 10px;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+  z-index: 6;
+}
+
+.close:hover {
+  opacity: 0.5;
+}
+
+* {box-sizing:border-box}
+
+.mySlides1, .mySlides2 , .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 , .mySlides8 , .mySlides9 , .mySlides10 {display: none}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top: 100px;
+  left: -400px;
+  margin: auto;
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  top: 350px;
+  margin-left: -200px;
+  width: auto;
+  padding: 16px;
+  color: rgb(131, 1, 167);
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 7;
+}
+.next {
+  right: 20px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#logo{
+  position: fixed;
+  top: -10px;
+  left: 10px;
+  width: 150px;
+  z-index: 4;
+  background: transparent;
+}
+          </style>  
+          <script>
+            
+
+
+
+var e1 = document.getElementById('ed1');
+var e2 = document.getElementById('ed2');
+var e3 = document.getElementById('ed3');
+var e4 = document.getElementById('ed5');
+var ai = document.getElementById('ani-ima');
+var wi = document.getElementById('workshop-ima');
+var ti = document.getElementById('dep1');
+var si = document.getElementById('illu1');
+var pi = document.getElementById('phot1');
+var pi2 = document.getElementById('phot2');
+var f1 = document.getElementById('ed4');
+var f2 = document.getElementById('ed6');
+
+const btne = document.getElementById('buttonedi');
+const btna = document.getElementById('buttonani');
+const btnw = document.getElementById('buttonwor');
+const btnt = document.getElementById('buttontyp');
+const btns = document.getElementById('buttonsit');
+const btnp = document.getElementById('buttonpho');
+const btnacceuil = document.getElementById('logo');
+const btnabout = document.getElementById('buttonabout');
+const btncontact = document.getElementById('buttoncontact');
+
+btnabout.addEventListener("click",ApparitionAbout, false);
+var zoomabout= document.getElementById('about');
+function ApparitionAbout(){
+  zoomabout.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+
+btncontact.addEventListener("click",ApparitionContact, false);
+var popContact= document.getElementById('contact');
+function ApparitionContact(){
+  popContact.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+
+btne.addEventListener("click",changeStyleEd, false);
+function changeStyleEd() {
+    ai.style.opacity ="0";
+    wi.style.opacity ="0";
+    ti.style.opacity ="0";
+    si.style.opacity ="0";
+    pi.style.opacity ="0";
+    pi2.style.opacity ="0";
+    e1.style.opacity ="1";
+    e2.style.opacity ="1";
+    e3.style.opacity ="1";
+    e4.style.opacity ="1";
+    f1.style.opacity = "1";
+    f2.style.opacity = "1";
+}
+
+
+btns.addEventListener("click",changeStyleSi, false);
+function changeStyleSi() {
+    ai.style.opacity = "0";
+    wi.style.opacity = "0";
+    ti.style.opacity ="0" ;
+    pi.style.opacity ="0" ;
+    pi2.style.opacity ="0";
+    e1.style.opacity ="0";
+    e2.style.opacity ="0";
+    e3.style.opacity ="0";
+    e4.style.opacity ="0";
+    f1.style.opacity = "0";
+    f2.style.opacity = "0";
+    si.style.opacity ="1" ;
+}
+
+
+
+btna.addEventListener("click",changeStyleAn, false);
+function changeStyleAn() {
+    wi.style.opacity = "0";
+    ti.style.opacity ="0" ;
+    si.style.opacity ="0" ;
+    pi.style.opacity ="0" ;
+    pi2.style.opacity ="0";
+    e1.style.opacity ="0";
+    e2.style.opacity ="0";
+    e3.style.opacity ="0";
+    e4.style.opacity ="0";
+    ai.style.opacity = "1";
+    f1.style.opacity = "1";
+    f2.style.opacity = "1";
+}
+
+
+
+btnt.addEventListener("click",changeStyleTy, false);
+function changeStyleTy() {
+    ai.style.opacity = "0";
+    wi.style.opacity = "0";
+    si.style.opacity ="0" ;
+    pi.style.opacity ="0" ;
+    pi2.style.opacity ="0";
+    e1.style.opacity ="0";
+    e2.style.opacity ="0";
+    e3.style.opacity ="0";
+    e4.style.opacity ="0";
+    f1.style.opacity = "0";
+    f2.style.opacity = "0";
+    ti.style.opacity ="1" ;
+}
+
+
+
+btnp.addEventListener("click",changeStylePh, false);
+function changeStylePh() {
+    ai.style.opacity = "0";
+    wi.style.opacity = "0";
+    ti.style.opacity ="0" ;
+    si.style.opacity ="0" ;
+    e1.style.opacity ="0";
+    e2.style.opacity ="0";
+    e3.style.opacity ="0";
+    e4.style.opacity ="0";
+    f1.style.opacity = "0";
+    f2.style.opacity = "0";
+    pi.style.opacity ="1" ;
+    pi2.style.opacity ="1";
+}
+
+
+
+btnw.addEventListener("click",changeStyleWo, false);
+function changeStyleWo() {
+    ai.style.opacity = "0";
+    ti.style.opacity ="0" ;
+    si.style.opacity ="0" ;
+    pi.style.opacity ="0" ;
+    pi2.style.opacity ="0";
+    e1.style.opacity ="0";
+    e2.style.opacity ="0";
+    e3.style.opacity ="0";
+    e4.style.opacity ="0";
+    f1.style.opacity = "0";
+    f2.style.opacity = "0";
+    wi.style.opacity = "1";
+}
+
+btnacceuil.addEventListener("click",changeStyleAcc, false);
+function changeStyleAcc() {
+    ai.style.opacity="1";
+    ti.style.opacity="1";
+    si.style.opacity="1";
+    pi.style.opacity="1";
+    pi2.style.opacity ="1";
+    e1.style.opacity ="1";
+    e2.style.opacity ="1";
+    e3.style.opacity ="1";
+    e4.style.opacity ="1";
+    f1.style.opacity = "1";
+    f2.style.opacity = "1";
+    wi.style.opacity="1";
+}
+
+//zooms
+
+const imed1 = document.getElementById('ed1');
+const imed2 = document.getElementById('ed2');
+const imed3 = document.getElementById('ed3');
+const imed4 = document.getElementById('ed5');
+const imed5 = document.getElementById('phot1');
+const imed6 = document.getElementById('phot2');
+const imed7 = document.getElementById('dep1');
+const imed8 = document.getElementById('illu1');
+const imed9 = document.getElementById('plumeau');
+const imed10 = document.getElementById('ed6');
+const imed11 = document.getElementById('ed4');
+
+
+const boutonclose = document.getElementById('boutonclose');
+var zoomimed1= document.getElementById('zoom-photo1');
+var zoomimed2= document.getElementById('zoom-photo2');
+var zoomimed3= document.getElementById('zoom-photo3');
+var zoomimed4= document.getElementById('zoom-photo4');
+var zoomimed5= document.getElementById('zoom-photo5');
+var zoomimed6= document.getElementById('zoom-photo6');
+var zoomimed7= document.getElementById('zoom-photo7');
+var zoomimed8= document.getElementById('zoom-photo8');
+var zoomimed9= document.getElementById('zoom-photo9');
+var zoomimed10= document.getElementById('zoom-photo10');
+var zoomimed11= document.getElementById('zoom-photo11');
+
+imed1.addEventListener("click",zoomApparition,false);
+imed2.addEventListener("click",zoomApparition2,false);
+imed3.addEventListener("click",zoomApparition3,false);
+imed4.addEventListener("click",zoomApparition4,false);
+imed5.addEventListener("click",zoomApparition5,false);
+imed6.addEventListener("click",zoomApparition6,false);
+imed7.addEventListener("click",zoomApparition7,false);
+imed8.addEventListener("click",zoomApparition8,false);
+imed9.addEventListener("click",zoomApparition9,false);
+imed10.addEventListener("click",zoomApparition10,false);
+imed11.addEventListener("click",zoomApparition11,false);
+
+function zoomApparition() {
+    zoomimed1.style.display="block";
+    document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition2() {
+    zoomimed2.style.display="block";
+    document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition3() {
+    zoomimed3.style.display="block";
+    document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition4() {
+  zoomimed4.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition5() {
+  zoomimed5.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition6() {
+  zoomimed6.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition7() {
+  zoomimed7.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition8() {
+  zoomimed8.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition9() {
+  zoomimed9.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition10() {
+  zoomimed10.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+function zoomApparition11() {
+  zoomimed11.style.display="block";
+  document.documentElement.style.overflow = 'hidden';
+}
+
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+    document.documentElement.style.overflow = 'visible';
+  });
+  
+}
+
+//slide
+
+let slideIndex = [1,1,1,1,1,1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4","mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
+showSlides(1, 6);
+showSlides(1, 7);
+showSlides(1, 8);
+showSlides(1, 9);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let y;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (y = 0; y < x.length; y++) {
+     x[y].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+
+
+
+
+
+
+
+
+          </script>
+</head>
+<body>
+ <nav>
+    <ul class="menu">
+      <li>
+        <button type="button" class="boutton" id="buttonacceuil">Eloïse Agostini</button>
+      </li>
+      <li>
+        <button type="button" class="boutton" id="buttonabout">à propos</button>
+        
+      </li>
+      <li>
+        projets
+        <ul class="sub-menu">
+            <li>
+                <button type="button" class="boutton" id="buttonedi">édition</button>
+            </li>
+            <li > 
+                <button type="button" class="boutton" id="buttonsit">illustration</button>
+            </li>
+            <li > 
+                <button type="button"  class="boutton" id="buttonani">animation</button>
+            </li>
+            <li> 
+                <button type="button" class="boutton" id="buttontyp">dépliant</button>
+            </li>
+            <li > 
+                <button type="button"  class="boutton" id="buttonpho">photographie</button>
+            </li>
+            <li > 
+                <button type="button" class="boutton" id="buttonwor">workshop</button>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="boutton" id="buttoncontact">contact</button>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <div class="editions" id="editions-ima">
+    <img id="ed1" src="balade-face.jpg">
+    <img id="ed2" src="barthes-face.jpg">
+    <img id="ed3" src="farenheit-face.jpg">
+    <img id="ed4" src="sarah-face.jpg">
+    <img id="ed5" src="lib-face.jpg">
+    <img id="ed6" src="mano nera-face.jpg">
+  </div>
+  <div class="animations" id="ani-ima">
+    <img id="an1" src="">
+  </div>
+  <div class="workshop" id="workshop-ima">
+    <img id="plumeau" src="plumeau.jpg">
+  </div>
+  <div class="depliant" id="typo-ima">
+    <img id="dep1" src="carte-face.jpg">
+  </div>
+  <div class="illustration" id="illu-ima">
+    <img id="illu1" src="illu.jpg">
+  </div>
+  <div class="photos" id="photo-ima">
+    <img id="phot1" src="serie8_hory.jpg">
+    <img id="phot2" src="ab12.jpg">
+  </div>
+
+
+  <div class="zooms" id="zoom-photo1">
+    <span class="close">x</span>
+    <div><h2>Itinéraire le long des lignes de désir de Fontbarlettes,2020</h2>
+    <h1>Contexte:</br>Première année DNA, ESAD Valence</br> Description:</br>25*16cm,</br>25 pages</h1>
+    <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+    et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+    Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+    aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+    par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+    Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+    porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+    </div>
+    <div class="slideshow-container">
+       <div class="mySlides1">
+        <img class="zoomphoto1-ima" src="balade-face.jpg">
+      </div>
+      <div class="mySlides1">
+        <img class="zoomphoto1-ima-double" src="balade-slide-1.jpg">
+      </div>
+      <div class="mySlides1">
+        <img class="zoomphoto1-ima-double" src="balade-slide-2.jpg">
+      </div>
+      <div class="mySlides1">
+        <img class="zoomphoto1-ima-double" src="balade-slide-3.jpg">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+   
+  </div>
+
+  <div class="zooms" id="zoom-photo2">
+    <span class="close">x</span>
+    <div><h2>Leçon inaugurale du Collège de France, Roland Barthes,2020</h2>
+      <h1>Contexte:</br>Première année DNA, ESAD Valence</br> Description:</br>25*16cm,</br>50 pages</h1>
+      <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+      et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+      Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+      aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+      par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+      Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+      porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+      </div>
+    <div class="slideshow-container">
+      <div  class="mySlides2">
+        <img class="zoomphoto1-ima" src="barthes-face.jpg">
+      </div>
+      <div  class="mySlides2">
+        <img class="zoomphoto1-ima" src="barthes-slide-1.jpg">
+      </div>
+      <div  class="mySlides2">
+        <img class="zoomphoto1-ima" src="barthes-slide-2.jpg">
+      </div>
+      <div  class="mySlides2">
+        <img class="zoomphoto1-ima" src="barthes-slide-3.jpg">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+  </div>
+
+  <div class="zooms" id="zoom-photo3">
+    <span class="close">x</span>
+    <div><h2>Re-printed Farenheit 451</h2>
+      <h1>Contexte:</br>Première année DNA, ESAD Valence,2021</br> Description:</br>25*16cm,</br>200 pages</h1>
+      <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+      et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+      Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+      aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+      par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+      Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+      porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+      </div>
+    <div class="slideshow-container">
+      <div class="mySlides3">
+        <img class="zoomphoto1-ima" src="farenheit-face.jpg">
+      </div>
+      <div class="mySlides3">
+        <img class="zoomphoto1-ima-double" src="farenheit-slide-1.jpg">
+      </div>
+      <div class="mySlides3">
+        <img class="zoomphoto1-ima-double" src="farenheit-slide-2.jpg">
+      </div>
+      <div class="mySlides3">
+        <img class="zoomphoto1-ima-double" src="farenheit-slide-3.jpg">
+      </div>
+      <div class="mySlides3">
+        <img class="zoomphoto1-ima-double" src="farenheit-slide-4.jpg">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+    </div>
+  </div>
+
+  <div class="zooms" id="zoom-photo4">
+    <span class="close">x</span>
+    <div><h2>Analyse éditions Libertés.2</h2>
+      <h1>Contexte:</br>Première année DNA, ESAD Valence, 2021</br> Description:</br>25*16cm,</br>25 pages</h1>
+      <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+      et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+      Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+      aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+      par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+      Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+      porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+      </div>
+    <div class="slideshow-container">
+      <div class="mySlides4">
+        <img class="zoomphoto-lib" src="lib-face.jpg">
+      </div>
+      <div class="mySlides4">
+        <img class="zoomphoto1-ima-double" src="lib-slide-1.jpg">
+      </div>
+      <div class="mySlides4">
+        <img class="zoomphoto1-ima-double" src="lib-slide-2.jpg">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+    </div>
+  </div>
+
+    <div class="zooms" id="zoom-photo5">
+      <span class="close">x</span>
+      <div><h2>Série Les lignes de désir de Fontbarlettes</h2>
+        <h1>Contexte:</br>Première année DNA, ESAD Valence,2020</br> Description:</br>25*16cm</h1>
+        <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+        et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+        Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+        aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+        par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+        Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+        porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+        </div>
+      <div class="slideshow-container">
+        <div class="mySlides5">
+          <img class="zoomphoto4-ima" src="serie8_hory.jpg">
+        </div>
+        <div class="mySlides5">
+          <img class="zoomphoto4-ima" src="serie5-hory.jpg">
+        </div>
+        <div class="mySlides5">
+          <img class="zoomphoto4-ima" src="serie6-hory.jpg">
+        </div>
+        <div class="mySlides5">
+          <img class="zoomphoto4-ima" src="serie4-hory.jpg">
+        </div>
+        <div class="mySlides5">
+          <img class="zoomphoto4-ima" src="serie3-hory.jpg">
+        </div>
+        <div class="mySlides5">
+          <img class="zoomphoto4-ima" src="serie-hory.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      </div>
+    </div>
+
+      <div class="zooms" id="zoom-photo6">
+        <span class="close">x</span>
+        <div><h2>Série Abstrait</h2>
+          <h1>Contexte:</br>Première année DNA, ESAD Valence,2020</br> Description:</br>25*16cm</h1>
+          <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+          et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+          Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+          aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+          par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+          Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+          porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+          </div>
+        <div class="slideshow-container">
+          <div class="mySlides6">
+            <img class="zoomphoto5-ima" src="ab12.jpg">
+          </div>
+          <div class="mySlides6">
+            <img class="zoomphoto5-ima" src="ab11.jpg">
+          </div>
+          <div class="mySlides6">
+            <img class="zoomphoto5-ima" src="ab10.jpg">
+          </div>
+          <div class="mySlides6">
+            <img class="zoomphoto5-ima" src="ab9.jpg">
+          </div>
+          <div class="mySlides6">
+            <img class="zoomphoto5-ima" src="ab8.jpg">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        </div>
+      </div>
+
+        <div class="zooms" id="zoom-photo7">
+          <span class="close">x</span>
+          <div><h2>Cartographie du Plan</h2>
+            <h1>Contexte:</br>Première année DNA, ESAD Valence,2020</br> Description:</br>25*16cm</h1>
+            <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+            et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+            Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+            aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+            par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+            Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+            porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+            </div>
+          <div class="slideshow-container">
+            <div class="mySlides7">
+              <img class="zoomphoto6-ima" src="carte-face.jpg">
+            </div>
+            <div class="mySlides7">
+              <img class="zoomphoto7-ima" src="carte-face-deplier.jpg">
+            </div>
+            <div class="mySlides7">
+              <img class="zoomphoto1-ima-double" src="carte-verso.jpg">
+            </div>
+            <div class="mySlides7">
+              <img class="zoomphoto7-ima-leg" src="carte-legende.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="zooms" id="zoom-photo8">
+          <span class="close">x</span>
+          <div><h2>Illustration cartographie des lignes de désir du Plan</h2>
+            <h1>Contexte:</br>Première année DNA, ESAD Valence,2020</br> Description:</br>25*16cm</h1>
+            <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+            et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+            Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+            aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+            par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+            Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+            porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+            </div>
+  
+          <img class="zoomphoto-illu" src="illu.jpg">
+           
+          
+        </div>
+
+        <div class="zooms" id="zoom-photo9">
+          <span class="close">x</span>
+          <div><h2>Photogrammes composition</h2>
+            <h1>Contexte:</br>Deuxième année BTS, La Tourrache, Toulon, 2019</br> Description:</br>25*16cm</h1>
+            <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+            et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+            Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+            aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+            par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+            Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+            porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+            </div>
+          <div class="slideshow-container">
+            <div class="mySlides8">
+              <img class="zoomphoto7-ima" src="plumeau.jpg">
+            </div>
+            <div class="mySlides8">
+              <img class="zoomphoto7-ima" src="filet.jpg">
+            </div>
+            <div class="mySlides8">
+              <img class="zoomphoto7-ima" src="lum.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="zooms" id="zoom-photo10">
+          <span class="close">x</span>
+          <div><h2>Flip Book Mano negra King of Bongo</h2>
+            <h1>Contexte:</br>Première année DNA, ESAD Valence,2020</br> Description:</br>25*16cm</h1>
+            <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+            et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+            Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+            aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+            par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+            Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+            porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+            </div>
+            <div class="slideshow-container">
+              <div class="mySlides9">
+                <img class="zoomphoto7-ima-leg" src="mano nera-face.jpg">
+              </div>
+              <div class="mySlides9">
+                <video  class="zoomphoto-video"  controls>
+                  <source src="Bring the fire.mp4" type=video/mp4>
+                </video>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 8)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 8)">&#10095;</a>
+            </div>
+          
+           
+          
+        </div>
+
+        <div class="zooms" id="zoom-photo11">
+          <span class="close">x</span>
+          <div><h2>Flip Book Sarah Vaughan With Clifford Brown</h2>
+            <h1>Contexte:</br>Première année DNA, ESAD Valence,2020</br> Description:</br>25*16cm</h1>
+            <div class="paragraphe"><p>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+            et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+            Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+            aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+            par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+            Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+            porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</p></div>
+            </div>
+            <div class="slideshow-container">
+              <div class="mySlides10">
+                <img class="zoomphoto7-ima-leg" src="sarah-face.jpg">
+              </div>
+              <div class="mySlides10">
+                <video  class="zoomphoto-video"  controls>
+                  <source src="Lullaby of birdland.mp4" type=video/mp4>
+                </video>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+            </div>
+          
+        </div>
+
+        <div class="zooms" id="about">
+          <span class="close">x</span>
+          <div class="presentation"><h3>Les lignes de désir sont des chemins tracés dans la terre après des passages répétés des marcheurs
+            et qui coupent de grande étendue d' herbe en leur milieu traçant un itinéraire souvent plus court.
+            Dans ce quartier de Fontbarlettes y en a beaucoup des plus ou moins nettes et elles relient les habitations
+            aux pôles du quartier. Les habitants délaissent les voies aménagées au profit de ces lignes qu'ils ont créées
+            par eux même de façon inconsciente et qui apparaissent ou disparaissent selon la vie du quartier.
+            Une édition narrative et contemplative qui retrace un itinéraire le long de ce réseau de circulation alternatif,
+            porte le regard sur des éléments qui sont traversés quotidiennement par les habitants et qui en deviennent insignifiants.</h3>
+          </div>
+
+          <div class="parcours">
+            <h3>
+              Parcours</br>
+              Baccalauréat Scientifique Toulon</br>
+              Mise à niveau en arts appliqués Toulon La Tourrache </br>
+              BTS Design graphique option médias imprimés Toulon La Tourrache </br>
+              2 eme année DNA option design graphique </br>
+
+            </h3>
+          </div>
+            
+            <div class="experience">
+              <h3>
+                Expériences</br>
+                Stage restauration du patrimoine </br>
+                Stage impirmerie Adko </br>
+                STage Macap</br>
+                Exposition Livre à Systhème , Médiathèque Latour Maubourg, Valence, 2022
+ 
+            </h3>
+            </div>
+
+            <div class="Compétences">
+              <h3>
+                Compétences</br>
+                Illustrator, Photoshop, Indesign, AfterEffect, Blender </br>
+                Sérigraphie,  </br>
+                Codage(html, css, javacscript)</br>
+ 
+            </h3>
+            </div>
+              
+        </div>
+
+        <div class="pop" id="contact">
+          <span class="close">x</span>
+          <div class="presentation"><h3>email: eloise.agostini.08@gmail.com</br>
+            07.49.43.22.21
+
+          </h3>
+          </div>
+
+          
+              
+        </div>
+
+        <img id="logo" src="logo.png">
+            
+       
+</body>
+</html>
