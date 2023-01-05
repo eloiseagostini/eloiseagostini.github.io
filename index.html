@@ -345,6 +345,7 @@
         height: 1200px;
        scroll-margin: 10px;
         z-index: 5;
+      opacity: 0;
     }
     .zooms{
         position: relative;
@@ -868,6 +869,7 @@
     var zoomabout= document.getElementById('about');
     function ApparitionAbout(){
       zoomabout.style.display="block";
+      zoomabout.style.opacity="1";
       document.documentElement.style.overflow = 'hidden';
     }
     
