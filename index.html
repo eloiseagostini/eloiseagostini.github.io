@@ -170,6 +170,13 @@
       left: 100px;
       z-index: 4;
     }
+    #ed7{
+      width: 200px;
+      position:absolute;
+      top: 200px;
+      left:1100px;
+      z-index:1;
+    }
     #an1{
         width: 200px;
         position: absolute;
@@ -511,6 +518,7 @@
     <img id="ed4" src="sarah-face.jpg">
     <img id="ed5" src="lib-face.jpg">
     <img id="ed6" src="mano nera-face.jpg">
+    <img id="ed7" scr="babel1.jpg">
   </div>
   <div class="animations" id="ani-ima">
     <img id="an1" src="">
@@ -819,6 +827,28 @@
           
         </div>
 
+<div class="zooms" id="zoom-photo12">
+  <span class="class">x</span>
+  <div><h2>Babel</h2>
+    <h1>Contexte:</br>Deuxième année DNA, ESAD Valence,2023</br> Description:</br>10x6.5cm</h1>
+<div class="paragraphe"><p>Babel edition</p></div>
+</div>
+<div class="slideshow-container">
+  <div class="mySlide11">
+    <img class="zoomphoto7-ima-leg" scr="babel1.jpg">
+  </div>
+  <div class="zoomphoto7-ima-leg" scr="babel2.jpg">
+  </div>
+  <div class="zoomphoto7-ima-leg" scr="babel3.jpg">
+  </div>
+  <div class="zoomphoto7-ima-leg" scr="babel4.jpg">
+  </div>
+  <a class="prev" onclick="plusSlides(-1,10)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,10)">&#10095;</a>
+</div>
+</div>
+
+
         <div class="zooms" id="about">
           <span class="close">×</span>
           <div id="presentation"><h3>Faire des allers-retours entre l’objectif et l’abstrait. Fabriquer des livres qui se manipulent, 
@@ -864,6 +894,7 @@
     var pi2 = document.getElementById('phot2');
     var f1 = document.getElementById('ed4');
     var f2 = document.getElementById('ed6');
+    var e7 = document.getElementById('ed7');
     
     const btne = document.getElementById('buttonedi');
     const btna = document.getElementById('buttonani');
@@ -903,6 +934,7 @@
         e4.style.opacity ="1";
         f1.style.opacity = "1";
         f2.style.opacity = "1";
+      e7.style.opacity="1";
     }
     
     
@@ -920,6 +952,7 @@
         f1.style.opacity = "0";
         f2.style.opacity = "0";
         si.style.opacity ="1" ;
+      e7.style.opacity="0";
     }
     
     
@@ -938,6 +971,7 @@
         ai.style.opacity = "1";
         f1.style.opacity = "1";
         f2.style.opacity = "1";
+      e7.style.opacity="0";
     }
     
     
@@ -956,6 +990,7 @@
         f1.style.opacity = "0";
         f2.style.opacity = "0";
         ti.style.opacity ="1" ;
+      e7.style.opacity="0";
     }
     
     
@@ -974,6 +1009,7 @@
         f2.style.opacity = "0";
         pi.style.opacity ="1" ;
         pi2.style.opacity ="1";
+      e7.style.opacity="0";
     }
     
     
@@ -992,6 +1028,7 @@
         f1.style.opacity = "0";
         f2.style.opacity = "0";
         wi.style.opacity = "1";
+      e7.style.opacity="0";
     }
     
     btnacceuil.addEventListener("click",changeStyleAcc, false);
@@ -1008,6 +1045,7 @@
         f1.style.opacity = "1";
         f2.style.opacity = "1";
         wi.style.opacity="1";
+      e7.style.opacity="1";
     }
     
     //zooms
@@ -1023,7 +1061,7 @@
     const imed9 = document.getElementById('plumeau');
     const imed10 = document.getElementById('ed6');
     const imed11 = document.getElementById('ed4');
-    
+    const imed12 = document.getElementById('ed7')
     
     const boutonclose = document.getElementById('boutonclose');
     var zoomimed1= document.getElementById('zoom-photo1');
@@ -1037,6 +1075,7 @@
     var zoomimed9= document.getElementById('zoom-photo9');
     var zoomimed10= document.getElementById('zoom-photo10');
     var zoomimed11= document.getElementById('zoom-photo11');
+    var zoomimed12= document.getElementById('zoom-photo12');
     
     imed1.addEventListener("click",zoomApparition,false);
     imed2.addEventListener("click",zoomApparition2,false);
@@ -1049,6 +1088,7 @@
     imed9.addEventListener("click",zoomApparition9,false);
     imed10.addEventListener("click",zoomApparition10,false);
     imed11.addEventListener("click",zoomApparition11,false);
+    imed12.addEventListener("click",zoomApparition12,false);
     
     function zoomApparition() {
         zoomimed1.style.display="block";
@@ -1094,6 +1134,10 @@
       zoomimed11.style.display="block";
       document.documentElement.style.overflow = 'hidden';
     }
+    function zoomApparition12(){
+      zoomimed12.style.display="block";
+      document.documentElement.style.overflow = 'hidden';
+    }
     
     var closebtns = document.getElementsByClassName("close");
     var i;
@@ -1108,8 +1152,8 @@
     
     //slide
     
-    let slideIndex = [1,1,1,1,1,1,1,1,1,1];
-    let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4","mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10"]
+    let slideIndex = [1,1,1,1,1,1,1,1,1,1,1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4","mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10";"mySlides11"]
     showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
@@ -1120,6 +1164,7 @@
     showSlides(1, 7);
     showSlides(1, 8);
     showSlides(1, 9);
+    showSlides(1, 10);
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
     }
